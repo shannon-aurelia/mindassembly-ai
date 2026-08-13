@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "MindAssembly — Counterfactual Mind Laboratory",
   description:
     "Fork identical synthetic minds, give them different experiences, and trace how their beliefs and decisions diverge.",
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: {
+    icon: [{ url: "/cortex-orb.svg", type: "image/svg+xml" }],
+    shortcut: "/cortex-orb.svg",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
